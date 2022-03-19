@@ -3,15 +3,13 @@ import { useNavigate } from "react-router-dom"
 import styled from "styled-components"
 
 const HeaderBar = styled.div`
-    width: 80%;
+    width: 100%;
     height: 100px;
-    background-color: rgb(252, 251, 246);
-    border-radius: 10px;
+    background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 15px 3%;
-    margin: 0 auto;
     box-sizing: border-box;
 `
 
@@ -35,6 +33,7 @@ const NavMenu = styled.a`
     cursor: pointer;
     font-size: 30px;
     font-weight: 700;
+    color: ivory;
 `
 
 function Header () {
@@ -45,9 +44,8 @@ function Header () {
         <HeaderBar>
             <MainLogo onClick={() => navigate('/')}/>
             <HeaderNav>
-                <NavMenu onClick={() => navigate('/board')}>게시글</NavMenu>
-                <NavMenu onClick={() => navigate('/visitor')}>방명록</NavMenu>
-                <NavMenu>etc.</NavMenu>
+                <NavMenu onClick={() => navigate('/aboutme')}>About me</NavMenu>
+                <NavMenu onClick={() => navigate('/portfolio')}>Portfolio</NavMenu>
             </HeaderNav>
         </HeaderBar>
     )

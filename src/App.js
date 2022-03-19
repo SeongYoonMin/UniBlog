@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Board from "./pages/board/Board";
-import CreateBoard from "./pages/board/CreateBoard";
+import AboutMe from "./pages/board/AboutMe";
 import Main from "./pages/Main/Main";
-import Visitor from "./pages/visitors/Visitor";
+import Portfolio from "./pages/visitors/Portfolio";
 
 
 function App() {
@@ -13,9 +12,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/board" element={<Board />}/>
-          <Route path="/visitor" element={<Visitor />}/>
-          <Route path="/createboard" element={<CreateBoard />}/>
+          <Route path="/aboutme" element={<AboutMe />}/>
+          <Route path="/portfolio" element={<Portfolio />}/>
         </Routes>
       </BrowserRouter>
   );

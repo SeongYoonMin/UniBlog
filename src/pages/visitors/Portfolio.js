@@ -1,4 +1,4 @@
-function Visitor () {
+function Portfolio () {
     return (
         <div className="pageWrapper">
             Visitor
@@ -6,4 +6,4 @@ function Visitor () {
     )
 }
 
-export default Visitor
+export default Portfolio
