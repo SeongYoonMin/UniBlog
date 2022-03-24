@@ -9,7 +9,7 @@ function AboutMe () {
 
     return (
         <div className="pageWrapper">
-            
+            asdf
         </div>
     )
 }

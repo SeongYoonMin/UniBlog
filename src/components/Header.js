@@ -34,6 +34,11 @@ const NavMenu = styled.a`
     font-size: 30px;
     font-weight: 700;
     color: ivory;
+    transition: all .3s;
+    &:hover {
+        transform: scale(1.2);
+        text-decoration: underline;
+    }
 `
 
 function Header () {
